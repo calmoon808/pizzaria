@@ -1,18 +1,20 @@
 html{
-    background-image: url("assets\PizzaBackground.png");
+    background-image: url("../assets/PizzaBackground.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .menu-area li a{
+    font-family: 'Press Start 2P', cursive;
     text-decoration: none;
     color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: block;
-    padding: 0 25px;
-    font-size: 14px;
-    line-height: 20px;
+    padding: 5px 20px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 0;
     position: relative;
 }
 
@@ -22,8 +24,7 @@ html{
 }
 
 .menu-area li a:hover{
-    background: tomato;
-    color:#fff;
+    color:cornflowerblue;
 }
 
 nav:before{
@@ -48,16 +49,16 @@ nav:after{
     right: 0;
 }
 
-.custom-padding{
-    padding-top: 20px;
-}
-
 nav{
     position: relative;
     padding: 10px 15px 10px 10px;
     text-align: right;
     z-index: 1;
-    background: #333;
+    background-color: black;
+    background-image: url(../assets/pacman.png);
+    background-position: 20% 105%;
+    background-repeat: no-repeat;
+    background-size: 30%;
     margin: 0 auto;
     width: calc(100% - 60px);
 }
@@ -65,13 +66,15 @@ nav{
 .logo{
     width: 15%;;
     float: left;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 25px;
     text-align: left;
     padding-left: 2%;
-    padding-top: 12.5px;
-    content:url(assets\pizza.png);
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    padding-bottom: 50px;
+
 }
 
 #name{
@@ -81,11 +84,204 @@ nav{
     margin-bottom: 50px;
     margin-right: 40px;
     margin-left: 40px;
+    margin-top: 10px;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
 }
+
 
 #tagLine{
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     vertical-align: middle;
-} 
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
+ 
 
+#today{
+    padding-top: 50px;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
+
+.menuTitle{
+    padding-top: 40px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
+
+.sectionTitle{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#special{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-animation: rainbow 10s infinite;
+}
+
+@-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+}
+
+.pizzaName{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.description{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 125%;
+    color: white;
+    font-weight: 700;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+
+.price{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 150%;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#menu{
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.pizza{
+    padding-top: 20px;
+}
+
+#subscribe{
+    padding-top: 40px;
+}
+
+#visit{
+    padding-top: 40px;
+}
+
+#deal{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.subContent{
+    margin-left: 40px;
+}
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#addy{
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    list-style: none;
+    padding-right: 40px;
+    margin-left: 0;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+footer{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80%;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.endSectionTitle{
+    font-family: 'Press Start 2P', cursive;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
